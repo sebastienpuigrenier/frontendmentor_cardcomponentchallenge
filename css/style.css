@@ -1,0 +1,155 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/* Reset browser std */
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: "Lexend Deca", sans-serif;
+  font-size : 15px;
+  background-color: hsl(233, 47%, 7%);
+}
+
+h1,h2,h3{
+  font-family: "Inter", sans serif;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+
+h1{
+  font-size: 36px;
+}
+
+h3{
+  font-size: 23px;
+}
+
+h4{
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: normal;
+  color: hsla(0, 0%, 100%, 0.75);
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-family: "Inter", sans serif;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.card{
+  width: 1110px;
+  height: 445px;
+  margin: 175px auto 50px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.highlighted{
+  color: hsl(277, 64%, 61%);
+}
+
+.list-stat{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 51.35%;
+  padding: 72px 120px 63px 72px;
+}
+
+.text p {
+    line-height: 25px;
+    margin-top: -51px;
+}
+
+.img {
+  box-sizing: border-box;
+  width: 48.65%;
+  background-image:
+    linear-gradient(hsla(277, 64%, 61%, 0.5), hsla(277, 64%, 61%, 0.5)),
+    url(../images/image-header-desktop.jpg);
+    border-radius: 0px 8px 8px 0px;
+
+}
+
+.attribution{
+    text-align: center;
+}
+
+.attribution a{
+  color: hsl(277, 64%, 61%);
+
+}
+
+@media (max-width: 375px) {
+  h1{
+    text-align: center;
+    font-size: 28px;
+  }
+
+
+  .card {
+    width: 327px;
+    height: 780px;
+    margin: 110px auto 50px;
+    flex-direction: column-reverse;
+  }
+
+  .img {
+    height: 30.77%;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    background-size: contain;
+    background-image:
+      linear-gradient(hsla(277, 64%, 61%, 0.5), hsla(277, 64%, 61%, 0.5)),
+      url(../images/image-header-mobile.jpg);
+  }
+
+  .text {
+    width: 100%;
+    height: 69.23%;
+    padding: 39px 34px 30px 34px;
+  }
+
+  .text p {
+    text-align: center;
+    line-height: 25px;
+    margin-top: 0px;
+  }
+
+
+.list-stat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+  h3,h4{
+    text-align: center;
+  }
+
+  .element-list{
+    margin: 14px;
+  }
+}
+
